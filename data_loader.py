@@ -229,7 +229,6 @@ class SalObjDataset(Dataset):
 		# self.label_name_list = glob.glob(label_dir+'*.png')
 		self.image_name_list = img_name_list
 		self.label_name_list = lbl_name_list
-		print(self.label_name_list)
 		self.transform = transform
 
 	def __len__(self):
