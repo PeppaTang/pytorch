@@ -76,11 +76,9 @@ tra_lbl_name_list = []
 for img_path in tra_img_name_list:
 	img_name = img_path.split(os.sep)[-1]
 	img_name = img_name.replace("sat","mask") #由于原数据集中sat如文件名带的是sat，所以要将原图的文件名将文件名中的sat换为mask
-	print(img_name)
 	aaa = img_name.split(".")
 	bbb = aaa[0:-1]
 	imidx = bbb[0]
-	print(imidx)
 
 	for i in range(1,len(bbb)):
 		imidx = imidx + "." + bbb[i]
